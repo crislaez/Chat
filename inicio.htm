@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat Live</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/datos.js"></script>
+    <script>
+    $(document).ready(function(){
+        enviarDatos();
+        setInterval(recargarPagina,1000);
+    });
+    </script>
+</head>
+<body>
+    <section>
+        <div class="divChat">
+            <div class="divContenedor">           
+                <!-- <div class="divMensajes">
+                    <span class="spNombre">Alberto:</span>
+                    <span class="spMensaje">¿hola, que tal?</span>
+                    <span class="spHora">8:45 pm</span>
+                </div> -->
+            </div>
+            <div class="divFormulario">
+                <form id="formulario" action="" method="" enctype="">
+                    <input type="text" name="nombre" placeholder="nombre...">
+                    <textarea name="mensaje" id="mensaje" cols="10" rows="1" placeholder="mensaje..."></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
